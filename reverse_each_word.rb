@@ -2,7 +2,7 @@ def reverse_each_word(sentence1)
   newSentence = sentence1.split
   testSentence = ""
   newSentence.collect do |string|
-    testSentence << "#{string[0..-1].reverse} "
+    testSentence << "#{string[0..-2].reverse} "
   end
   testSentence
 end
