@@ -1,10 +1,10 @@
 def reverse_each_word(sentence1)
-  newSentence = sentence1.split(" ")
-  returnSentence = ""
-  newSentence.collect do |string|
-    testSentence << string.reverse
+  oldSentence = sentence1.split(" ")
+  returnSentence = []
+  oldSentence.collect do |string|
+    returnSentence << string.reverse
   end
-  testSentence
+  returnSentence.join(" ")
 end
 
 puts reverse_each_word("Hello there, Nathan")
